@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="162dp"
+        android:layout_height="49dp"
+        android:background="#FF5722"
+        android:backgroundTint="#FF5722"
+        android:backgroundTintMode="add"
+        android:text="Enviar"
+        android:textColorLink="#FF5722"
+        app:rippleColor="#FF5722"
+        app:strokeColor="#FF5722"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="750dp" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar informacion"
+        android:textColor="#E46238"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="64dp"
+        tools:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Usuario"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Contraseña"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <TextView
+        android:id="@+id/lblGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero:"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <RadioButton
+        android:id="@+id/rdFamenino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femenino"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="620dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
